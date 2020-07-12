@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB9Ynwnn8Bm6oey-pi27iRMsnSjibLrRac",
+    authDomain: "pwagram-14b14.firebaseapp.com",
+    databaseURL: "https://pwagram-14b14.firebaseio.com",
+    projectId: "pwagram-14b14",
+    storageBucket: "pwagram-14b14.appspot.com",
+    messagingSenderId: "787803132130",
+    appId: "1:787803132130:web:78e5a484fc6a8efe37cebb"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<header>
+    <h1>Bienvenidos</h1>
+    <section id="loggedOut">
+        <h2>PWAGram</h2>
+        <a href="#" id="linkLogin">Entrar</a>
+        <a href="#" id="linkSignUp">Registro</a>
+    </section>
+
+    <section id="loddedIn">
+        <h2>Bienvenido <span> Usuario </span></h2>
+        <a href="#" id="linkPost">Agregar Imagen</a>
+        <a href="#" id="linkLogOut">Salir</a>
+    </section>
+</header>
+<main>
+    <section id="signup">
+        <h2>Registrar Cuenta de Usuario</h2>
+
+        <form onsubmit="return false">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre de Usuario">
+            </div>
+            <div class="form-group"></div>
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email de registro">            
+            </div>
+
+            <div class="form-group"></div>
+                <label for="pass">Password</label>
+                <input type="password" class="form-control" id="pass" >
+            </div>
+
+            <div class="form-group">            
+                <label for="pass">Repetir Password</label>
+                <input type="password" class="form-control" id="repass" >
+            </div>
+            <button class="btn btn-primary">Registrarse</button>
+            <button class="btn btn-primary" type="reset">Limpiar</button>
+        </form>
+
+    </section>
+
+<section id="login">
+    <h2>Entrar a tu cuenta</h2>
+    <form action="">
+        <div class="form-group">
+            <label for="emailLogin">Email</label>
+            <input type="email" id="emailLogin" class="form-control" placeholder="Email de registro">            
+        </div>
+
+        <div class="form-group">
+            <label for="passLogin">Password</label>
+            <input type="password" id="passLogin" class="form-control" >
+        </div>
+        <button class="btn btn-primary">Entrar</button>
+    </form>
+</section>
+
+<section id="post">
+    <h2>Publicar Imagenes</h2>
+    <form onsubmit="return false">
+        <input type="file" id="picture" accept="image/*" class="form-control" >
+<!--    <input type="file" id="picture" accept="image/*" capture="user">
+        <input type="file" id="picture" accept="image/*" capture="enviroment"> -->
+
+        <section id="secImage">
+            <img src="" alt="" width="400">
+            <select name="" id="">
+                <option value="">Sin Filtro</option>
+                <option value="">Escala de Grises</option>
+                <option value="">Saturacion</option>
+                <option value="">Negativo</option>
+                <option value="">Sepia</option>
+                <option value="">Brillo</option>
+                <option value="">Oscurecer</option>
+                <option value="">Blur</option>
+            </select>
+            <button class="btn btn-primary">Agregar Imagen</button>
+        </section>
+    </form>
+</section>
+
+<section id="timeline">
+    <h2>PWAGRAM - Red Social de Fotografia</h2>
+    <ul>
+
+    </ul>
+</section>
+
+
+</main>
+<footer>
+
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

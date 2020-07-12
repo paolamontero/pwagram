@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    display: inline-block;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid coral;
+    text-align: center;
+    color: #007;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+
+header>section {
+    padding: 15px;
+    margin: 0 auto;
+    background-color: white;
+    color: #333;
+
+}
+
+main {
+    padding: 15px;
+}
+
+form {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    padding: 5px;
+}
+
+main>section {
+    display: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+h2 {
+    color: coral;
+    padding-bottom: 5px;
+    border-bottom: 2px solid coral;
+    font-size: 1.2em;
+}
