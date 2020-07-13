@@ -1,1 +1,1 @@
-# pwagram
+Esta aplicacion intente realizar algo similar a lo que es instagram hoy en día. Utilizando HTML, js, firebase y css. Actualmente sigo trabajando en el proyecto para intentar hacer una versión mejorada y mas amigable para el usuario; asi como un codigo mas limpio.  
